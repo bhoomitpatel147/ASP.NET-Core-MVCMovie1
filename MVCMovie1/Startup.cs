@@ -27,7 +27,7 @@ namespace MVCMovie1
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<MvcMovieContext>(options =>
+            services.AddDbContext<MVCMovie1Context>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
         }
 
